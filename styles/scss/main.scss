@@ -305,7 +305,7 @@
     display: none;
     @include media-phone {
       display: block;
-      
+
       padding: 52px 0;
       padding-top: 30px;
       max-width: 332px;
@@ -323,8 +323,8 @@
   width: 100%;
 
   background-position: left bottom;
-  @include media-phone{
-    .content{
+  @include media-phone {
+    .content {
       padding: 0;
     }
   }
@@ -346,16 +346,16 @@
     @include media-tablet {
       background-image: none;
     }
-    @include media-phone{
+    @include media-phone {
       background-image: url(../../img/lead.svg);
       padding: 0 20px;
       background-position: center top;
       background-size: 480px;
       padding-bottom: 66px;
     }
-    @include media-phone-med{
+    @include media-phone-med {
       background-size: 380px;
-      h1{
+      h1 {
         font-size: 30px;
       }
     }
@@ -388,19 +388,19 @@
           @include media-tablet {
             font-size: 15px;
           }
-          @media(max-width: 410px) {
-           font-size: 13px;
-        }
-        @media(max-width: 360px) {
-          font-size: 10.5px;
-       }
+          @media (max-width: 410px) {
+            font-size: 13px;
+          }
+          @media (max-width: 360px) {
+            font-size: 10.5px;
+          }
         }
       }
       .btn {
         margin-top: 30px;
         max-width: 100%;
       }
-      @include media-phone{
+      @include media-phone {
         max-width: 396px;
         padding: 37px 41px;
         background-color: rgba(158, 0, 255, 0.7);
@@ -414,12 +414,12 @@
   @include media-tablet {
     padding: 30px 0;
   }
-  @include media-phone{
+  @include media-phone {
     padding-top: 50px;
   }
   &__main {
     @include flex(row, space-between, center);
-    @include media-phone{
+    @include media-phone {
       flex-direction: column-reverse;
     }
   }
@@ -429,7 +429,7 @@
     @include media-tablet {
       max-width: 97px;
     }
-    @include media-phone{
+    @include media-phone {
       display: none;
     }
   }
@@ -443,7 +443,7 @@
     @include media-tablet {
       font-size: 6px;
     }
-    @include media-phone{
+    @include media-phone {
       font-size: 15px;
     }
   }
@@ -452,9 +452,9 @@
   .link-content {
     margin: 0 20px;
   }
-  .arrows{
+  .arrows {
     display: none;
-    @include media-phone{
+    @include media-phone {
       display: block;
       position: absolute;
       top: -20px;
