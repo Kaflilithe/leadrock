@@ -89,7 +89,7 @@
           margin-top: 0px;
         }
         @include media-sm-tablet {
-          max-width: 357px;
+          max-width: 347px;
         }
       }
     }
@@ -140,7 +140,7 @@
         font-size: 18px;
       }
       @include media-tablet {
-        font-size: 14px;
+        font-size: 17px;
       }
     }
     &__item {
@@ -553,4 +553,5 @@
       font-size: 18px;
     }
   }
+
 }
