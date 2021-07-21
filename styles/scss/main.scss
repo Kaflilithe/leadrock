@@ -69,6 +69,7 @@
         display: none;
         @include media-sm-tablet {
           display: block;
+          margin-top: -60px !important;
         }
       }
       img {
@@ -100,6 +101,7 @@
 }
 .sect1 {
   padding: 80px 0;
+
   @include media-tablet {
     padding: 30px 0;
   }
@@ -126,9 +128,8 @@
     p {
       text-align: center;
       color: #fff;
-      font-weight: 100;
+      font-weight: 500;
       font-size: 26px;
-      letter-spacing: 2px;
       @include media-large {
         font-size: 18px;
       }
@@ -148,6 +149,13 @@
 .stages {
   position: relative;
   z-index: 9999;
+  .box {
+    @include media-sm-tablet {
+      max-width: 380px;
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
   img {
     position: relative;
     z-index: -1;
@@ -160,8 +168,36 @@
       b {
         display: inline;
       }
-
-      margin-bottom: 33px;
+      margin-bottom: 26px;
+    }
+  }
+  .title {
+    &--min {
+      text-align: left;
+      @include media-sm-tablet {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      @media (max-width: 430px) {
+        font-size: 22px;
+      }
+      @media (max-width: 410px) {
+        font-size: 19px;
+      }
+    }
+    &--sect {
+      @include media-sm-tablet {
+        font-size: 46px;
+      }
+      @media (max-width: 430px) {
+        font-size: 39px;
+      }
+      @media (max-width: 370px) {
+        font-size: 36px;
+      }
+      @media (max-width: 340px) {
+        font-size: 32px;
+      }
     }
   }
   &__first {
@@ -359,7 +395,6 @@
         font-size: 30px;
       }
     }
-  
   }
 }
 .footer {
@@ -461,9 +496,15 @@
     margin: 0;
     position: relative;
     padding-left: 20px;
+    span{
+      padding-top: 5px;
+    }
     @include flex(row, start, center);
     @include media-tablet {
       padding-left: 13px;
+    }
+    @include media-sm-tablet {
+      padding-left: 17px;
     }
 
     &::before {
@@ -476,6 +517,7 @@
       position: absolute;
       top: auto;
       left: 0;
+    
       @include media-large {
         width: 10px;
         height: 13px;
@@ -485,7 +527,8 @@
         height: 10px;
       }
       @include media-sm-tablet {
-        display: none;
+        width: 12px;
+        height: 15px;
       }
     }
     &:not(:last-child) {
@@ -498,10 +541,7 @@
       font-size: 14px;
     }
     @include media-sm-tablet {
-      padding-left: 0;
-      display: block;
-      font-size: 20px;
-      text-align: center;
+      font-size: 22px;
     }
     @include media-phone-med {
       font-size: 18px;
