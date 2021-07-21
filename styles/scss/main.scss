@@ -69,8 +69,14 @@
         display: none;
         @include media-sm-tablet {
           display: block;
-          margin-top: -60px !important;
+          margin-top: -80px !important;
         }
+        @media(max-width: 380px) {
+          margin-top: -70px !important;
+      }
+      @media(max-width: 340px) {
+        margin-top: -60px !important;
+    }
       }
       img {
         max-width: 792px;
