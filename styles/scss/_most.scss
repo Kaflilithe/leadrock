@@ -138,8 +138,6 @@ a {
       font-size: 14px;
     }
     &--intro {
-      margin: 0;
-      color: #ffffff;
       margin-bottom: 40px;
     }
   }
@@ -160,6 +158,10 @@ a {
   @include media-phone {
     &--big {
       font-size: 22px;
+    }
+    &--intro {
+     font-size: 20px;
+      margin-bottom: 20px;
     }
   }
   @include media-phone-med{

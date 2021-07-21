@@ -69,13 +69,13 @@
         display: none;
         @include media-sm-tablet {
           display: block;
-          margin-top: -80px !important;
+          margin-top: -70px !important;
         }
         @media(max-width: 380px) {
-          margin-top: -70px !important;
+          margin-top: -60px !important;
       }
       @media(max-width: 340px) {
-        margin-top: -60px !important;
+        margin-top: -50px !important;
     }
       }
       img {
@@ -89,7 +89,7 @@
           margin-top: 0px;
         }
         @include media-sm-tablet {
-          max-width: 397px;
+          max-width: 357px;
         }
       }
     }
